@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/mlops.vn/static/css/main.12fdd4e7.css",
-    "main.js": "/mlops.vn/static/js/main.76c761e5.js",
+    "main.js": "/mlops.vn/static/js/main.d057c64c.js",
     "static/media/img-2.jpg": "/mlops.vn/static/media/img-2.bb238fc1bea8ae2474d2.jpg",
     "static/media/img-1.jpg": "/mlops.vn/static/media/img-1.53f4843759ebec256cb9.jpg",
     "static/media/img-8.jpg": "/mlops.vn/static/media/img-8.fabdf94dc5be2d3dc707.jpg",
     "index.html": "/mlops.vn/index.html",
     "main.12fdd4e7.css.map": "/mlops.vn/static/css/main.12fdd4e7.css.map",
-    "main.76c761e5.js.map": "/mlops.vn/static/js/main.76c761e5.js.map"
+    "main.d057c64c.js.map": "/mlops.vn/static/js/main.d057c64c.js.map"
   },
   "entrypoints": [
     "static/css/main.12fdd4e7.css",
-    "static/js/main.76c761e5.js"
+    "static/js/main.d057c64c.js"
   ]
 }
