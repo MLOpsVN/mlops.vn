@@ -1,0 +1,46 @@
+name: Deploy to gh-pages
+
+on:
+  push:
+    branches: [tungdao/setup-gh-page]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Ensures only one workflow per branch/environment will run at a time
+concurrency:
+  group: env-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [17.9.0] # We will deploy with only one version of node
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          # this fetches all branches. Needed because we need gh-pages branch for deploy to work
+          fetch-depth: 0
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: install packages
+        run: |
+          npm install
+
+      - name: build
+        run: |
+          npm run build
+
+      - name: deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          publish_dir: ./build
