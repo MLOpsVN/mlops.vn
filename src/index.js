@@ -2,7 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import GA4React from "ga-4-react";
 import App from "./App";
-import { HashRouter as Router } from "react-router-dom";
 
 const ga4react = new GA4React("G-4ZFLENPHX1");
 
