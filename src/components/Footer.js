@@ -70,10 +70,10 @@ function Footer() {
         <div className="social-media-wrap">
           <div className="footer-logo">
             <Link className="social-logo" to="/">
-              MLOps.VN
+              MLOpsVN
             </Link>
           </div>
-          <small className="website-rights">MLOps.VN ⓒ 2022</small>
+          <small className="website-rights">MLOpsVN ⓒ 2022</small>
           <div className="social-icons">
             <Link
               className="social-icon-link facebook"
