@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.b5a0b0a8.css",
-    "main.js": "/static/js/main.76c8fef7.js",
-    "static/media/img-2.jpg": "/static/media/img-2.bb238fc1bea8ae2474d2.jpg",
-    "static/media/img-1.jpg": "/static/media/img-1.53f4843759ebec256cb9.jpg",
-    "static/media/img-8.jpg": "/static/media/img-8.fabdf94dc5be2d3dc707.jpg",
-    "index.html": "/index.html",
-    "main.b5a0b0a8.css.map": "/static/css/main.b5a0b0a8.css.map",
-    "main.76c8fef7.js.map": "/static/js/main.76c8fef7.js.map"
+    "main.css": "/mlops.vn/static/css/main.12fdd4e7.css",
+    "main.js": "/mlops.vn/static/js/main.54533d29.js",
+    "static/media/img-2.jpg": "/mlops.vn/static/media/img-2.bb238fc1bea8ae2474d2.jpg",
+    "static/media/img-1.jpg": "/mlops.vn/static/media/img-1.53f4843759ebec256cb9.jpg",
+    "static/media/img-8.jpg": "/mlops.vn/static/media/img-8.fabdf94dc5be2d3dc707.jpg",
+    "index.html": "/mlops.vn/index.html",
+    "main.12fdd4e7.css.map": "/mlops.vn/static/css/main.12fdd4e7.css.map",
+    "main.54533d29.js.map": "/mlops.vn/static/js/main.54533d29.js.map"
   },
   "entrypoints": [
-    "static/css/main.b5a0b0a8.css",
-    "static/js/main.76c8fef7.js"
+    "static/css/main.12fdd4e7.css",
+    "static/js/main.54533d29.js"
   ]
 }
