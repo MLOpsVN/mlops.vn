@@ -13,10 +13,6 @@ const ga4react = new GA4React("G-4ZFLENPHX1");
     .catch((err) => console.log("Analytics Failure"))
     .finally(() => {
       const root = ReactDOM.createRoot(document.getElementById("root"));
-      root.render(
-        <Router>
-          <App />
-        </Router>
-      );
+      root.render(<App />);
     });
 })();
