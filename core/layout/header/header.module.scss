@@ -1,0 +1,25 @@
+.root {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 6.25rem;
+  .logo {
+    width: 13.75rem;
+    height: 3.0625rem;
+    background-image: url('/Logo_ngang_1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .nav {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    font-weight: 700;
+    font-size: 0.875rem;
+    color: var(--gray-500);
+
+    a + a {
+        margin-left: 2.6875rem;
+    }
+  }
+}

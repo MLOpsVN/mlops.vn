@@ -1,0 +1,32 @@
+.root {
+  padding: 1.5rem 6.25rem;
+  display: flex;
+
+  .logo {
+    width: 6.4375rem;
+    height: 4.75rem;
+    background-image: url('/Logo-01 1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .copy_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.875rem;
+  }
+
+  .contact {
+    flex: 1;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    a + a {
+      margin-left: 2rem;
+    }
+  }
+}

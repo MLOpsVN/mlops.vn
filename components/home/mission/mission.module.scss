@@ -1,0 +1,25 @@
+.root {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: var(--purple-500);
+    padding: 1.5rem 6.25rem;
+    justify-content: space-between;
+    .content {
+      font-weight: 700;
+      font-size: 0.875rem;
+      max-width: 23.375rem;
+      margin-top: 2rem;
+      color: white;
+      line-height: 1.725rem;
+    }
+  
+    .img {
+      width: 43.3125rem;
+      height: 28.3125rem;
+      background-image: url('/6628896-01.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+  
