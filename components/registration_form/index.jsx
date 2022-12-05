@@ -34,8 +34,15 @@ const RegistrationForm = () => {
       method: 'POST',
       body: JSON.stringify(payload),
     })
-      .then(console.log)
-      .catch(console.error);
+      .then((res) => {
+        if (res.status === 201) {
+          alert();
+        }
+        return Promise.reject();
+      })
+      .catch((error) => {
+        alert('lỗi');
+      });
   };
 
   return (
