@@ -9,15 +9,15 @@ const Footer = () => {
     <div className={styles.root}>
       <div className={styles.logo}></div>
       <div className={styles.copy_right}>
-        <div>© 2020 - Bản quyền thuộc về ABC</div>
-        <div>ABC là tổ chức được cấp giấy phép DEF, đăng ký tại XYZ</div>
+        <div>Open Factor Foundation © Copyrighted 2022</div>
+        <div>Open Factor is a social enterprise licensed by Hanoi Authority for Planning and Investment, Vietnam.</div>
       </div>
       <div className={styles.contact}>
-        <Link href={'https://www.facebook.com/'} target={'_blank'}>
-          <Image src={Youtube} alt="ytb" />
-        </Link>
-        <Link href={'https://www.facebook.com/'} target={'_blank'}>
+        <Link href={'https://www.facebook.com/groups/mlopsvn'} target={'_blank'}>
           <Image src={Facebook} alt="fb" />
+        </Link>
+        <Link href={'https://www.youtube.com/channel/UCiWCOaOBnEhwes6b-pT3Odw'} target={'_blank'}>
+          <Image src={Youtube} alt="ytb" />
         </Link>
       </div>
     </div>

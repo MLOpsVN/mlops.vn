@@ -11,8 +11,10 @@ const Mission = () => {
             <TitleSection title={'Mission'} />
           </div>
           <div className={styles.content}>
-            An organization committed to filling the gap between AI in theories and AI in production by equalizing opportunities in the AI
-            industry for AI enthusiastic youth in Vietnam.
+            Efficiency: Help organizations build better ML systems faster, by using MLOps best practices in the AI industry.
+            <br/>
+            <br/>
+            Societal Impacts: Contribute to the growth of AI community in Vietnam, especially to the MLOps community.
           </div>
         </div>
       </div>

@@ -24,12 +24,20 @@ const menu = [
     path: '#vision',
   },
   {
-    title: 'Lecture',
-    path: '#',
+    title: 'Activities',
+    path: '#activities',
+  },
+  {
+    title: 'Instructors',
+    path: '#instructors',
   },
   {
     title: 'Registration',
-    path: '#',
+    path: '#registration',
+  },
+  {
+    title: 'Contact',
+    path: '#contact',
   },
 ];
 

@@ -10,7 +10,7 @@ const Card = ({ icon, title, content }) => {
       <div className={styles.title}>{title}</div>
       <div className={styles.contents}>
         {content?.map?.((ctx, index) => {
-          return <div className={styles.content} key={index}>&#9679; {ctx}</div>;
+          return <div className={styles.content} key={index}>&#8226; {ctx}</div>;
         })}
       </div>
     </div>

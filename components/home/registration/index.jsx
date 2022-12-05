@@ -5,7 +5,7 @@ import styles from './registration.module.scss';
 const Registration = () => {
   return (
     <>
-      <div className={styles.root}>
+      <div className={styles.root} id="registration">
         <div className={styles.img}></div>
         <div>
           <div>

@@ -4,6 +4,7 @@ import Founder from '@/components/home/founder';
 import Mission from '@/components/home/mission';
 import Registration from '@/components/home/registration';
 import Vision from '@/components/home/vision/vision';
+import Contact from '@/components/home/contact/contact';
 import styles from '../styles/Home.module.css';
 
 const Home = () => {
@@ -15,6 +16,7 @@ const Home = () => {
       <Activities />
       <Founder />
       <Registration />
+      <Contact />
     </div>
   );
 };
