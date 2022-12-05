@@ -1,11 +1,13 @@
-import Training from '@/assets/svgs/training.svg';
 import Card from '@/components/card';
 import TitleSection from '@/components/title_section';
 import styles from './activities.module.scss';
+import Training from '@/assets/svgs/training.svg';
+import Mentoring from '@/assets/svgs/mentoring.svg';
+import Consultation from '@/assets/svgs/consultation.svg';
 
 const Activities = () => {
   return (
-    <div className={styles.root}>
+    <div className={styles.root} id="activities">
       <div className={styles.title}>
         <TitleSection title={'Activities'} />
       </div>
@@ -30,33 +32,22 @@ const cards = [
     icon: Training,
     title: 'Training program',
     content: [
-      'Targets: AI community Activities',
-      'Activities',
-      'Create tutorials on Github (code), Youtube (video)',
-      'Organize training/sharing sessions/events (online/offline)',
+      'Organize training events for AI community',
     ],
   },
   {
-    icon: Training,
-    title: 'Training program',
+    icon: Mentoring,
+    title: 'Mentoring program',
     content: [
-      'Targets: AI community Activities',
-      'Activities',
-      'Create tutorials on Github (code), Youtube (video)',
-      'Organize training/sharing sessions/events (online/offline)',
+      'Connect AI enthusiastic and potential youngers with AI experts to plan and shape their future',
     ],
   },
   {
-    icon: Training,
-    title: 'Training program',
+    icon: Consultation,
+    title: 'Consultation',
     content: [
-      'Consultation',
-      'Building ML systems',
-      'Targets: individuals, organizations (e.g. private corporations, NPOs/NGOs, etc.)',
-      'Activities: to give advice on building ML pipelines: data pipeline, model development, model deployment, monitoring & maintenance',
-      'Career development',
-      'Targets: AI enthusiastic youngers',
-      'Activities: to give advice on career paths',
+      'Give advice on building ML systems for individuals and organizations',
+      'Give advice on career paths for AI enthusiastic youngers',
     ],
   },
 ];

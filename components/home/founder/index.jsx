@@ -4,9 +4,9 @@ import styles from './founder.module.scss';
 
 const Founder = () => {
   return (
-    <div className={styles.root}>
+    <div className={styles.root} id="instructors">
       <div className={styles.title}>
-        <TitleSection title={'Activities'} />
+        <TitleSection title={'Founders'} />
       </div>
 
       <div className={styles.card}>
@@ -26,27 +26,27 @@ export default Founder;
 
 const founders = [
   {
-    img: '/founder.png',
+    img: '/founders/tung-dao.jpg',
     name: 'Tung Dao',
     role: 'Senior ML Engineer',
-    org: 'Shopee',
+    org: 'Shopee, Singapore',
   },
   {
-    img: '/founder.png',
-    name: 'Tung Dao',
-    role: 'Senior ML Engineer',
-    org: 'Shopee',
+    img: '/founders/quan-dang.jpeg',
+    name: 'Quan Dang',
+    role: 'Expert ML Engineer',
+    org: 'Maritime Bank, Vietnam',
   },
   {
-    img: '/founder.png',
-    name: 'Tung Dao',
-    role: 'Senior ML Engineer',
-    org: 'Shopee',
+    img: '/founders/xuan-son-vu.png',
+    name: 'Xuan-Son Vu',
+    role: 'Senior Researcher',
+    org: 'Umeå University, Sweden',
   },
   {
-    img: '/founder.png',
-    name: 'Tung Dao',
-    role: 'Senior ML Engineer',
-    org: 'Shopee',
+    img: '/founders/harry-nguyen.jpeg',
+    name: 'Harry Nguyen',
+    role: 'Assistant Professor',
+    org: 'UCC, Ireland',
   },
 ];

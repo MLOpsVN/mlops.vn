@@ -1,5 +1,5 @@
 import TitleSection from '@/components/title_section';
-import styles from './Vision.module.scss';
+import styles from './vision.module.scss';
 
 const Vision = () => {
   return (
@@ -10,8 +10,7 @@ const Vision = () => {
             <TitleSection title={'Vision'} />
           </div>
           <div className={styles.content}>
-            An organization committed to filling the gap between AI in theories and AI in production by equalizing opportunities in the AI
-            industry for AI enthusiastic youth in Vietnam.
+            Open Factor Foundation commits to enable Vietnamese youth to bring inclusive and effective AI solutions to industries and sectors. We empower the youth with systematic and practical best practices from global AI industry tailored for Vietnam market.
           </div>
         </div>
       </div>
