@@ -1,11 +1,15 @@
 .root {
-  width: 100vw;
-  min-height: calc(100vh - 49px - 24px - 24px);
+  width: 100%;
+  // min-height: calc(100vh - 49px - 24px - 24px);
+  min-height: 100vh;
   position: relative;
 
   .filter {
-    width: 100vw;
-    min-height: calc(100vh - 49px - 24px - 24px);
+    top: 0;
+    left: 0;
+    width: 100%;
+    // min-height: calc(100vh - 49px - 24px - 24px);
+    min-height: 100vh;
     background: linear-gradient(250.73deg, rgba(58, 12, 163, 0.5) 12.73%, rgba(247, 37, 133, 0.5) 96.49%);
     opacity: 1;
     position: absolute;
@@ -13,17 +17,20 @@
   }
 
   .img_bg {
-    width: 100vw;
-    min-height: calc(100vh - 49px - 24px - 24px);
+    width: 100%;
+    // min-height: calc(100vh - 49px - 24px - 24px);
+    min-height: 100vh;
     opacity: 0.9;
     background-image: url('/bg_ig.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    position: fixed;
+    z-index: -1;
   }
 
   .intro {
     position: absolute;
-    width: 100vw;
+    width: 100%;
     min-height: calc(100vh - 49px - 24px - 24px);
     display: flex;
     justify-content: center;
@@ -47,7 +54,7 @@
       font-weight: 500;
       font-size: 0.875rem;
       text-align: center;
-      margin-top: 3rem
+      margin-top: 3rem;
     }
 
     div:nth-child(3) {

@@ -5,7 +5,7 @@ const FounderCard = ({ img, name, role, org }) => {
   return (
     <div className={styles.root}>
       <div className={styles.img}>
-        <Image src={img} title={name} width={254} height={254} alt={name} />
+        <Image src={img} title={name} width={258} height={254} alt={name} />
       </div>
       <div className={styles.name}>{name}</div>
       <div className={styles.role}>{role}</div>

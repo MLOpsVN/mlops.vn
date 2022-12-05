@@ -35,4 +35,10 @@
   border-radius: 1rem;
   color: var(--white);
   margin-top: 3rem;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--white);
+    color: #4895ef;
+  }
 }

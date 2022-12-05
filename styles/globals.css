@@ -3,7 +3,8 @@
   --gray-500: #212529;
   --pink-500: #f72585;
   --purple-500: #20153a;
-  --blue-300: #4CC9F0;
+  --blue-300: #4cc9f0;
+  --black: #000;
 }
 
 html,
@@ -12,6 +13,9 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
     sans-serif;
+  scroll-behavior: smooth;
+  overflow: auto;
+  scroll-snap-type: y mandatory;
 }
 
 a {

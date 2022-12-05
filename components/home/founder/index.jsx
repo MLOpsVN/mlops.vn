@@ -5,18 +5,20 @@ import styles from './founder.module.scss';
 const Founder = () => {
   return (
     <div className={styles.root} id="instructors">
-      <div className={styles.title}>
-        <TitleSection title={'Founders'} />
-      </div>
+      <div className={styles.content_w}>
+        <div className={styles.title}>
+          <TitleSection title={'Founders'} />
+        </div>
 
-      <div className={styles.card}>
-        {founders?.map?.((founder, index) => {
-          return (
-            <div key={index}>
-              <FounderCard {...founder} />
-            </div>
-          );
-        })}
+        <div className={styles.card}>
+          {founders?.map?.((founder, index) => {
+            return (
+              <div key={index}>
+                <FounderCard {...founder} />
+              </div>
+            );
+          })}
+        </div>
       </div>
     </div>
   );
