@@ -1,0 +1,35 @@
+.root {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 6.25rem;
+  position: fixed;
+  z-index: 9999;
+  // top: 0;
+  // left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  opacity: 0.9;
+  // backdrop-filter: blur(20px);
+  // filter: blur(20px);
+
+  .logo {
+    width: 13.75rem;
+    height: 3.0625rem;
+    background-image: url('/Logo_ngang.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .nav {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    font-weight: 700;
+    font-size: 0.875rem;
+    color: var(--white);
+
+    a + a {
+      margin-left: 2.6875rem;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.root {
+  min-height: 25rem;
+  height: 100%;
+  width: 20rem;
+  padding: 2rem 1.5rem;
+  color: var(--white);
+  border-radius: 1.25rem;
+  box-shadow: 0px 0px 20px #4cc9f0;
+
+  .icon {
+    text-align: center;
+  }
+
+  .title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 1rem;
+  }
+
+  .contents {
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin-top: 1rem;
+
+    .content {
+      margin-top: 0.5rem
+    }
+  }
+}

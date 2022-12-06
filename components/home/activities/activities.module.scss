@@ -1,0 +1,26 @@
+.root {
+  min-height: 100vh;
+  background-color: var(--purple-500);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .content_w {
+    width: 90rem;
+    // display: flex;
+    // align-items: center;
+    padding: 1.5rem 6.25rem;
+    // justify-content: space-between;
+  }
+
+  .title {
+    width: 70%;
+  }
+
+  .card {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+  }
+}
