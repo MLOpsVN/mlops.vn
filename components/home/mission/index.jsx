@@ -39,10 +39,10 @@ const Mission = () => {
                 <TitleSection title={'Mission'} />
               </div>
               <div className={styles.content}>
-                Efficiency: Help organizations build better ML systems faster, by using MLOps best practices in the AI industry.
+                Efficiency: Help organizations design/build/implement better ML systems faster, by using MLOps best practices in the AI industry, delivered by highly qualified professionals.
                 <br />
                 <br />
-                Societal Impacts: Contribute to the growth of AI community in Vietnam, especially to the MLOps community.
+                Societal Impacts: Contribute to the growth of AI community in Vietnam by having a strong human capital that supports successful digital transformation of the socio-economic systems in Viet Nam.
               </div>
             </div>
           </Animate>

@@ -15,8 +15,7 @@ const Contact = () => {
               {contacts?.map((item, index) => {
                 return (
                   <div key={index}>
-                    {item.title}:
-                    <Link href={item.link} key={index} target={'_blank'}>
+                    {item.title}: <Link href={item.link} key={index} target={'_blank'}>
                       {item.linkText}
                     </Link>
                   </div>
@@ -34,8 +33,8 @@ const Contact = () => {
 const contacts = [
   {
     title: 'Email',
-    link: 'mailto:mlopsvn@openfactor.com',
-    linkText: 'mlopsvn@openfactor.com',
+    link: 'mailto:mlopsvn@openfactor.org',
+    linkText: 'mlopsvn@openfactor.org',
   },
   {
     title: 'Facebook',

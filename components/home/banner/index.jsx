@@ -10,7 +10,7 @@ const Banner = () => {
           Empowering your team with a set of MLOps skills to build a reusable MLOps platform using the latest technologies and best practices from AI leading companies over the world.
         </div>
         <div>
-          <a href="#vision">Discover more</a>
+          <a href="#vision">Learn more</a>
         </div>
       </div>
       <div className={styles.img_bg}></div>

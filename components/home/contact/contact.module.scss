@@ -21,6 +21,13 @@
     margin-top: 2rem;
     color: white;
     line-height: 1.725rem;
+
+    a {
+      cursor: pointer;
+      &:hover {
+        color: #4895ef;
+      }
+    }
   }
 
   .img {
