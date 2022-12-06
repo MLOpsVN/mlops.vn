@@ -28,9 +28,8 @@ const Vision = () => {
                 <TitleSection title={'Vision'} />
               </div>
               <div className={styles.content}>
-                Open Factor Foundation commits to enable Vietnamese youth to bring inclusive and effective AI solutions to industries and
-                sectors. We empower the youth with systematic and practical best practices from global AI industry tailored for Vietnam
-                market.
+                Open Factor Foundation commits to enable Vietnamese youth to bring inclusive and effective AI solutions to industries and sectors.
+                We empower the youth with systematic and practical best practices from global AI industry tailored for Vietnam market.
               </div>
             </div>
           </Animate>
