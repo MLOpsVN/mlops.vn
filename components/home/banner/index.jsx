@@ -5,7 +5,7 @@ const Banner = () => {
     <div className={styles.root}>
       <div className={styles.filter}></div>
       <div className={styles.intro}>
-        <div>Unleash your MLOps potential in the AI era</div>
+        <div>Unlock your MLOps potential in the AI era</div>
         <div>
           Empowering your team with a set of MLOps skills to build a reusable MLOps platform using the latest technologies and best practices from AI leading companies over the world.
         </div>
