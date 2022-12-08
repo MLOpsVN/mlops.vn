@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import styles from './registration_form.module.scss';
 
-const apiUrl = 'http://api.mlops.vn/v1/mcc/links';
+const apiUrl = 'http://localhost:8990/v1/mcc/links';
 
 const RegistrationForm = () => {
   const [email, setEmail] = useState('');
@@ -25,24 +25,12 @@ const RegistrationForm = () => {
       return;
     }
 
-    const payload = { email, code };
-    const headers = {
-      'Content-Type': 'application/json',
-    };
+    const body = JSON.stringify({email: email, code: code});
     fetch(apiUrl, {
-      headers,
       method: 'POST',
-      body: JSON.stringify(payload),
-    })
-      .then((res) => {
-        if (res.status === 201) {
-          alert();
-        }
-        return Promise.reject();
-      })
-      .catch((error) => {
-        alert('lỗi');
-      });
+      headers: {'Content-Type': 'application/json'},
+      body: body,
+    });
   };
 
   return (
