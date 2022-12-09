@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import styles from './registration_form.module.scss';
 
-const apiUrl = 'http://localhost:8990/v1/mcc/links';
+const apiUrl = 'https://api.aihub.ml/v1/mcc/links';
 
 const RegistrationForm = () => {
   const [email, setEmail] = useState('');
