@@ -3,8 +3,12 @@
   display: flex;
   background-color: var(--white);
 
+  @media (max-width: 900px) {
+    padding: 1.5rem 2rem;
+  }
+
   .logo {
-    width: 6.4375rem;
+    min-width: 6.4375rem;
     height: 4.75rem;
     background-image: url('/Logo_vuong.png');
     background-repeat: no-repeat;

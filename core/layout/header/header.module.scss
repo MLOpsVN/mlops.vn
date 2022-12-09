@@ -3,7 +3,7 @@
   align-items: center;
   padding: 1.5rem 6.25rem;
   position: fixed;
-  z-index: 9999;
+  z-index: 999;
   // top: 0;
   // left: 0;
   background-color: rgba(0, 0, 0, 0.8);
@@ -12,8 +12,12 @@
   // backdrop-filter: blur(20px);
   // filter: blur(20px);
 
+  @media (max-width: 900px) {
+    padding: 1.5rem 2rem;
+  }
+
   .logo {
-    width: 13.75rem;
+    min-width: 13.75rem;
     height: 3.0625rem;
     background-image: url('/Logo_ngang.png');
     background-repeat: no-repeat;
