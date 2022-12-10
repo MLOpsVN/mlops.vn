@@ -17,11 +17,11 @@ const RegistrationForm = () => {
 
   const onSubmit = () => {
     if (email === '') {
-      alert('Email cannot be empty');
+      alert('Email cannot be empty.');
       return;
     }
     if (code === '') {
-      alert('Access code cannot be empty');
+      alert('Access code cannot be empty.');
       return;
     }
 
@@ -30,6 +30,11 @@ const RegistrationForm = () => {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
       body: body,
+    }).then((res) => {
+      alert("Succeed! Please check your email.");
+      return Promise.reject();
+    }).catch((error) => {
+      alert('Error! Please contact the organization.');
     });
   };
 
