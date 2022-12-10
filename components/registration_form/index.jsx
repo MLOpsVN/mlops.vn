@@ -31,9 +31,10 @@ const RegistrationForm = () => {
       headers: {'Content-Type': 'application/json'},
       body: body,
     }).then((res) => {
+      console.log(res);
       alert("Succeed! Please check your email.");
-      return Promise.reject();
     }).catch((error) => {
+      console.log(error);
       alert('Error! Please contact the organization.');
     });
   };
