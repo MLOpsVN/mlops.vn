@@ -7,7 +7,6 @@ function MyApp({ Component, pageProps }) {
     <div>
       <Head>
         <title>MLOpsVN</title>
-        <meta name="viewport" content="width=1440" />
       </Head>
       <Layout>
         <Component {...pageProps} />
