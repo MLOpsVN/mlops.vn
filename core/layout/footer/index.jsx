@@ -1,6 +1,6 @@
 import styles from './footer.module.scss';
 import Facebook from '@/assets/svgs/fb.svg';
-import Youtube from '@/assets/svgs/ytb.svg';
+import Discord from '@/assets/svgs/discord.svg';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -16,8 +16,8 @@ const Footer = () => {
         <Link href={'https://www.facebook.com/groups/mlopsvn'} target={'_blank'}>
           <Image src={Facebook} alt="fb" />
         </Link>
-        <Link href={'https://www.youtube.com/channel/UCiWCOaOBnEhwes6b-pT3Odw'} target={'_blank'}>
-          <Image src={Youtube} alt="ytb" />
+        <Link href={'https://discord.gg/JNbQpba9Ae'} target={'_blank'}>
+          <Image src={Discord} alt="ytb" />
         </Link>
       </div>
     </div>
