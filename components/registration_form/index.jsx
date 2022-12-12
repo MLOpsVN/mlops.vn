@@ -44,7 +44,7 @@ const RegistrationForm = () => {
       return;
     }
 
-    const body = JSON.stringify({name: name, email: email, code: code});
+    const body = JSON.stringify({customer_name: name, email: email, code: code});
     fetch(apiUrl, {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
