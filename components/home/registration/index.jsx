@@ -8,14 +8,12 @@ const Registration = () => {
       <div className={styles.root} id="registration">
         <div className={styles.content_w}>
           <div className={styles.img}></div>
-          <div>
+          <div className={styles.form}>
             <div>
-              <div>
-                <TitleSection title={'Registration'} />
-              </div>
-              <div className={styles.content}>
-                <RegistrationForm />
-              </div>
+              <TitleSection title={'Registration'} />
+            </div>
+            <div className={styles.content}>
+              <RegistrationForm />
             </div>
           </div>
         </div>

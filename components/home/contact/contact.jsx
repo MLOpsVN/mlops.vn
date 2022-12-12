@@ -8,20 +8,19 @@ const Contact = () => {
       <div className={styles.content_w}>
         <div>
           <div>
-            <div>
-              <TitleSection title={'Contact'} />
-            </div>
-            <div className={styles.content}>
-              {contacts?.map((item, index) => {
-                return (
-                  <div key={index}>
-                    {item.title}: <Link href={item.link} key={index} target={'_blank'}>
-                      {item.linkText}
-                    </Link>
-                  </div>
-                );
-              })}
-            </div>
+            <TitleSection title={'Contact'} />
+          </div>
+          <div className={styles.content}>
+            {contacts?.map((item, index) => {
+              return (
+                <div key={index}>
+                  {item.title}:{' '}
+                  <Link href={item.link} key={index} target={'_blank'}>
+                    {item.linkText}
+                  </Link>
+                </div>
+              );
+            })}
           </div>
         </div>
         <div className={styles.img}></div>

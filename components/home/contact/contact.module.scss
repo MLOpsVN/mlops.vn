@@ -38,3 +38,18 @@
     background-size: cover;
   }
 }
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 1024px) {
+  .root {
+    .content_w {
+      flex-direction: column;
+      justify-content: inherit;
+    }
+
+    .anm_2 {
+      margin-top: 2rem;
+    }
+  }
+}

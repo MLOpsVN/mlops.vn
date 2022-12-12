@@ -27,3 +27,27 @@
     background-size: cover;
   }
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 1024px) {
+  .root {
+    .content_w {
+      flex-direction: column;
+      padding: 2rem;
+    }
+
+    // .img {
+    //   width: 100%;
+    // }
+
+    .form {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      width: calc(100vw - 2rem);
+    }
+
+    .content {
+      min-width: auto;
+    }
+  }
+}

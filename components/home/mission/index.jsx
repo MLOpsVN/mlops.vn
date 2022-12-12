@@ -34,15 +34,17 @@ const Mission = () => {
               opacity: '1',
               transform: 'translateY(0)',
             }}>
-            <div>
+            <div className={styles.anm_2}>
               <div>
                 <TitleSection title={'Mission'} />
               </div>
               <div className={styles.content}>
-                Efficiency: Help organizations design/build/implement better ML systems faster, by using MLOps best practices in the AI industry, delivered by highly qualified professionals.
+                Efficiency: Help organizations design/build/implement better ML systems faster, by using MLOps best practices in the AI
+                industry, delivered by highly qualified professionals.
                 <br />
                 <br />
-                Societal Impacts: Contribute to the growth of AI community in Vietnam by having a strong human capital that supports successful digital transformation of the socio-economic systems in Viet Nam.
+                Societal Impacts: Contribute to the growth of AI community in Vietnam by having a strong human capital that supports
+                successful digital transformation of the socio-economic systems in Viet Nam.
               </div>
             </div>
           </Animate>

@@ -30,4 +30,20 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+  .anm_2 {}
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 1024px) {
+  .root {
+    .content_w {
+      flex-direction: column;
+      padding: 2rem;
+    }
+
+    .anm_2 {
+      margin-top: 2rem;
+    }
+  }
 }

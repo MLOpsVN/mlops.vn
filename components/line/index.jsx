@@ -7,7 +7,7 @@ const Line = ({ direction, width }) => {
       <div
         className={className}
         style={{
-          width: `${width}%`,
+          width: `${Math.round(width)}%`,
         }}></div>
       ;
     </div>
