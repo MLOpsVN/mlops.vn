@@ -29,6 +29,7 @@
   .root {
     .card {
       flex-direction: column;
+      align-items: center;
 
       & > div {
         margin-bottom: 2rem;

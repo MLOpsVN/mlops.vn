@@ -23,8 +23,7 @@ const RegistrationForm = () => {
 
   const onAllowContactChange = (e) => {
     setAllowContact(!allowContact);
-
-  }
+  };
 
   const onSubmit = () => {
     if (name === '') {
@@ -44,17 +43,19 @@ const RegistrationForm = () => {
       return;
     }
 
-    const body = JSON.stringify({name: name, email: email, code: code});
+    const body = JSON.stringify({ name: name, email: email, code: code });
     fetch(apiUrl, {
       method: 'POST',
-      headers: {'Content-Type': 'application/json'},
+      headers: { 'Content-Type': 'application/json' },
       body: body,
-    }).then((res) => {
-      alert("Succeed! Please check your email.");
-    }).catch((error) => {
-      console.log(error);
-      alert('Error! Please contact the organization.');
-    });
+    })
+      .then((res) => {
+        alert('Succeed! Please check your email.');
+      })
+      .catch((error) => {
+        console.log(error);
+        alert('Error! Please contact the organization.');
+      });
   };
 
   return (
@@ -69,9 +70,10 @@ const RegistrationForm = () => {
         <input placeholder="*Access Code" onChange={onAccessCodeChange} />
       </div>
       <div className={styles.checkbox}>
-        <label>
+        <label className={styles.container}>
+          Allow us to contact you via your email
           <input type="checkbox" onChange={onAllowContactChange} />
-          <i>Allow us to contact you via your email</i>
+          <span className={styles.checkmark}></span>
         </label>
       </div>
       <div className={styles.submit} onClick={onSubmit}>
