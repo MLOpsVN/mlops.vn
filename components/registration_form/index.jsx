@@ -1,9 +1,11 @@
 import { useState } from 'react';
 import styles from './registration_form.module.scss';
+import LoadingSpinner from '@/components/spinner';
 
 const apiUrl = 'https://api.aihub.ml/v1/mcc/links';
 
 const RegistrationForm = () => {
+  const [isLoading, setIsLoading] = useState(false);
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [code, setCode] = useState('');
@@ -26,7 +28,7 @@ const RegistrationForm = () => {
 
   }
 
-  const onSubmit = () => {
+  const onSubmit = async () => {
     if (name === '') {
       alert('Name cannot be empty.');
       return;
@@ -45,19 +47,23 @@ const RegistrationForm = () => {
     }
 
     const body = JSON.stringify({customer_name: name, email: email, code: code});
+
+    setIsLoading(true);
     fetch(apiUrl, {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
       body: body,
     }).then((res) => {
+      setIsLoading(false);
       alert("Succeed! Please check your email.");
     }).catch((error) => {
+      setIsLoading(false);
       console.log(error);
       alert('Error! Please contact the organization.');
     });
   };
 
-  return (
+  const renderForm = (
     <>
       <div className={styles.input}>
         <input placeholder="*Name" onChange={onNameChange} />
@@ -77,6 +83,12 @@ const RegistrationForm = () => {
       <div className={styles.submit} onClick={onSubmit}>
         Register
       </div>
+    </>
+  );
+
+  return (
+    <>
+      {isLoading ? <LoadingSpinner /> : renderForm}
     </>
   );
 };
