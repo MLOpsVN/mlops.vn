@@ -8,7 +8,7 @@ const FounderCard = ({ img, name, link, role, org }) => {
         <Image src={img} title={name} width={258} height={254} alt={name} />
       </div>
       <div className={styles.name}>
-        <a href={link} target="_blank">
+        <a href={link} target={'_blank'}>
           {name}
         </a>
       </div>
