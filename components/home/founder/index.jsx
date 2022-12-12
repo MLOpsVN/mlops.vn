@@ -30,24 +30,28 @@ const founders = [
   {
     img: '/founders/tung-dao.jpg',
     name: 'Tung Dao',
+    link: 'https://www.linkedin.com/in/tungdao17/',
     role: 'Senior ML Engineer',
     org: 'Shopee, Singapore',
   },
   {
     img: '/founders/quan-dang.jpeg',
     name: 'Quan Dang',
+    link: 'https://www.linkedin.com/in/quan-dang/',
     role: 'Expert ML Engineer',
     org: 'Maritime Bank, Vietnam',
   },
   {
     img: '/founders/xuan-son-vu.png',
     name: 'Xuan-Son Vu',
+    link: 'https://people.cs.umu.se/sonvx/',
     role: 'Senior Researcher',
     org: 'Umeå University, Sweden',
   },
   {
     img: '/founders/harry-nguyen.jpeg',
     name: 'Harry Nguyen',
+    link: 'https://www.gla.ac.uk/schools/computing/staff/index.html/staffcontact/person/4edfeeed8696#',
     role: 'Assistant Professor',
     org: 'UCC, Ireland',
   },
