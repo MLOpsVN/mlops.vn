@@ -52,14 +52,27 @@ const RegistrationForm = () => {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: body,
-    }).then((res) => {
+    })
+    .then((response) => {
       setIsLoading(false);
-      alert("Succeed! Please check your email.");
-    }).catch((error) => {
+      if (response.status === 200) {
+        alert("Succeed! Please check your email.");
+      }
+      return response.json();
+    })
+    .then((data) => {
+      if (data.error !== undefined && data.error.error !== undefined) {
+        console.log(data);
+        const err = data.error.error;
+        alert(`Error! ${err}`);
+      }
+    })
+    .catch((error) => {
       setIsLoading(false);
       console.log(error);
       alert('Error! Please contact the organization.');
     });
+    setAllowContact(false);
   };
 
   const renderForm = (
