@@ -40,6 +40,11 @@ const contacts = [
     link: 'https://www.facebook.com/groups/mlopsvn',
     linkText: 'fb.com/groups/mlopsvn',
   },
+  {
+    title: 'Discord',
+    link: 'https://discord.gg/JNbQpba9Ae',
+    linkText: 'MLOpsVN',
+  },
 ];
 
 export default Contact;
