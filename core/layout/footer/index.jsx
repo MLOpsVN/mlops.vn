@@ -14,10 +14,10 @@ const Footer = () => {
       </div>
       <div className={styles.contact}>
         <Link href={'https://www.facebook.com/groups/mlopsvn'} target={'_blank'}>
-          <Image src={Facebook} alt="fb" />
+          <Image src={Facebook} alt="facebook" />
         </Link>
         <Link href={'https://discord.gg/JNbQpba9Ae'} target={'_blank'}>
-          <Image src={Discord} alt="ytb" />
+          <Image src={Discord} alt="discord" />
         </Link>
       </div>
     </div>
