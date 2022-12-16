@@ -55,7 +55,7 @@ const RegistrationForm = () => {
     })
     .then((response) => {
       setIsLoading(false);
-      if (response.status === 200) {
+      if (response.status === 201) {
         alert("Succeed! Please check your email.");
       }
       return response.json();
